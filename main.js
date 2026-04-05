@@ -15,7 +15,7 @@ const createWindow = () => {
   })
 
   // win.loadFile('index.html')
-  win.loadURL('https://lifeis-logs.vercel.app/');
+  win.loadURL('https://lifeis-training.vercel.app/');
   // win.webContents.openDevTools();
   win.on('close', (e) => {
     e.preventDefault();
@@ -38,7 +38,7 @@ async function requestMicAccess() {
 app.whenReady().then(async () => {
   await requestMicAccess(); 
 
-  globalShortcut.register('Alt+CommandOrControl+L', () => {
+  globalShortcut.register('Alt+CommandOrControl+T', () => {
     win.show();
   });
   globalShortcut.register('Shift+CommandOrControl+W', () => {
